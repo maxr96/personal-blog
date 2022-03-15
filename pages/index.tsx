@@ -1,11 +1,10 @@
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
+import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
 import Post from '../types/post'
 
 type Props = {
@@ -19,16 +18,15 @@ const Index = ({ allPosts }: Props) => {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Max Dev Blog</title>
         </Head>
         <Container>
-          <Intro />
+          <Navbar />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
               date={heroPost.date}
-              author={heroPost.author}
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
             />
@@ -47,7 +45,6 @@ export const getStaticProps = async () => {
     'title',
     'date',
     'slug',
-    'author',
     'coverImage',
     'excerpt',
   ])
