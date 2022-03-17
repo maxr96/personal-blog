@@ -19,9 +19,9 @@ const Index = ({ allPosts }: Props) => {
       <Layout>
         <Head>
           <title>Max Dev Blog</title>
+          <Navbar />
         </Head>
         <Container>
-          <Navbar />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
