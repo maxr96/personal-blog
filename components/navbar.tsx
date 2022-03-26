@@ -7,7 +7,7 @@ const Navbar = () => {
     <Link href ="/">
       <a className="flex items-center">
         <img src="/assets/blog/logo/logo.png" className="mr-3 h-6 sm:h-10" alt="Max Dev Logo" />
-        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Max Dev</span>
      </a>
     </Link>
     <button data-collapse-toggle="mobile-menu" type="button" className="inline-flex items-center p-2 ml-3 text-base text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
@@ -18,8 +18,8 @@ const Navbar = () => {
     <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
       <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         <li>
-          <Link href="/">
-            <a className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">All Posts</a>
+          <Link href="posts">
+            <a className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Posts</a>
           </Link>
         </li>
         <li>
