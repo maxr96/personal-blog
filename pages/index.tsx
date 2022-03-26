@@ -1,7 +1,6 @@
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
-import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
@@ -19,7 +18,6 @@ const Index = ({ allPosts }: Props) => {
       <Layout>
         <Head>
           <title>Max Dev Blog</title>
-          <Navbar />
         </Head>
         <Container>
           {heroPost && (
