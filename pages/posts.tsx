@@ -9,27 +9,27 @@ type Props = {
   }
 
 const Posts = ({ allPosts }: Props) => {
-    return (
-        <Layout>
-            <Container>
-                <MoreStories posts={allPosts} />
-            </Container>
-        </Layout>
-    )
+  return (
+      <Layout>
+          <Container>
+              <MoreStories posts={allPosts} />
+          </Container>
+      </Layout>
+  )
 } 
 
 export default Posts
 
 export const getStaticProps = async () => {
-    const allPosts = getAllPosts([
-      'title',
-      'date',
-      'slug',
-      'coverImage',
-      'excerpt',
-    ])
-  
-    return {
-      props: { allPosts },
-    }
+  const allPosts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'coverImage',
+    'excerpt',
+  ])
+
+  return {
+    props: { allPosts },
   }
+}
