@@ -11,13 +11,7 @@ type Props = {
   // category: string
 }
 
-const HeroPost = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  slug,
-}: Props) => {
+const HeroPost = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
     <section>
       <div className="mb-8 md:mb-16">

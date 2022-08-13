@@ -1,14 +1,14 @@
-import Container from "../components/container"
-import Layout from "../components/layout"
+import Container from '../components/container'
+import Layout from '../components/layout'
 
 const MyProjects = () => {
-    return (
-        <Layout>
-            <Container>
-                <div>My Projects</div>
-            </Container>
-        </Layout>
-    )
-} 
+  return (
+    <Layout>
+      <Container>
+        <div>My Projects</div>
+      </Container>
+    </Layout>
+  )
+}
 
 export default MyProjects

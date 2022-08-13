@@ -1,7 +1,7 @@
 import Container from "../components/container"
 import Layout from "../components/layout"
 
-const About = () => {
+const AboutMe = () => {
     return (
         <Layout>
             <Container>
@@ -11,4 +11,4 @@ const About = () => {
     )
 } 
 
-export default About
+export default AboutMe
