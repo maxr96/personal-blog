@@ -1,6 +1,6 @@
-import Container from '../components/container'
-import Layout from '../components/layout'
-import MoreStories from '../components/more-stories'
+import Container from '../components/layout/container'
+import Layout from '../components/layout/layout'
+import MoreStories from '../components/post/more-stories'
 import { getAllPosts } from '../lib/api'
 import Post from '../types/post'
 

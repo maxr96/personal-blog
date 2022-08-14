@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import NavbarItem from './navbar-item'
+import NavbarItem from '../layout/navbar-item'
 
 const Navbar = () => {
   const router = useRouter()

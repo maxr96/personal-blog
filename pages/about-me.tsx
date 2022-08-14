@@ -1,5 +1,5 @@
-import Container from '../components/container'
-import Layout from '../components/layout'
+import Container from '../components/layout/container'
+import Layout from '../components/layout/layout'
 import Image from 'next/future/image'
 import profilePic from '../public/assets/blog/about-me/me.png'
 
