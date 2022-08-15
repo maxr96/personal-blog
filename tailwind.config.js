@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'dyna': ['DynaPuff', 'cursive']
+      }
+    },
   },
   plugins: [],
 }
