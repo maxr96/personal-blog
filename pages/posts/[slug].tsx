@@ -32,7 +32,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
           <>
             <article className="mb-32">
               <Head>
-                <title>{post.title} | Next.js Blog Exampl</title>
+                <title>{post.title + ' | MAX DEV'}</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader
