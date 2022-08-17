@@ -1,16 +1,10 @@
 import Container from '../components/layout/container'
 import Layout from '../components/layout/layout'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const ContactMe = () => {
   return (
     <Layout>
       <Container>
-        <FontAwesomeIcon
-          icon={faGithub}
-          style={{ fontSize: 100, color: 'blue' }}
-        />
         <div className="flex min-h-screen items-center justify-start bg-white">
           <div className="mx-auto w-full max-w-lg">
             <h1 className="text-4xl font-medium">Contact me</h1>

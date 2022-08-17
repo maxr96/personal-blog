@@ -1,14 +1,16 @@
 import DateFormatter from '../date-formatter'
 import CoverImage from './cover-image'
+import PostTag from './post-tag'
 import PostTitle from './post-title'
 
 type Props = {
   title: string
   coverImage: string
   date: string
+  tags: string
 }
 
-const PostHeader = ({ title, coverImage, date }: Props) => {
+const PostHeader = ({ title, coverImage, date, tags }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>
@@ -18,6 +20,11 @@ const PostHeader = ({ title, coverImage, date }: Props) => {
       <div className="max-w-9xl mx-auto">
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />
+        </div>
+        <div>
+          {tags.split(',').map((tag) => (
+            <PostTag key={tag} tag={tag}></PostTag>
+          ))}
         </div>
       </div>
     </>

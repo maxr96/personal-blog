@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/layout/container'
 import PostBody from '../../components/post/post-body'
-import Header from '../../components/layout/header'
 import PostHeader from '../../components/post/post-header'
 import Layout from '../../components/layout/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
@@ -25,7 +24,6 @@ const Post = ({ post, morePosts, preview }: Props) => {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
@@ -39,6 +37,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
+                tags={post.tags}
               />
               <PostBody content={post.content} />
             </article>
@@ -64,7 +63,8 @@ export async function getStaticProps({ params }: Params) {
     'slug',
     'content',
     'ogImage',
-    'coverImage'
+    'coverImage',
+    'tags'
   ])
   const content = await markdownToHtml(post.content || '')
 

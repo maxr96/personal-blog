@@ -8,7 +8,6 @@ type Props = {
   date: string
   excerpt: string
   slug: string
-  // category: string
 }
 
 const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {

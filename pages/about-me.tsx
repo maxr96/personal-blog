@@ -18,7 +18,7 @@ const AboutMe = () => {
   return (
     <Layout>
       <Container>
-        <div className="my-20 gap-10 flex flex-col items-center justify-center space-x-4 font-dyna">
+        <div className="gap-10 flex flex-col items-center justify-center space-x-4 font-dyna">
           <h1 className="text-blue-700 font-bold subpixel-antialiased text-lg">
             Hello fellow developers <span>&#129304;</span>
           </h1>
