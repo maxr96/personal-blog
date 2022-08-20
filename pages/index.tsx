@@ -5,6 +5,7 @@ import Layout from '../components/layout/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../types/post'
+import blogImages from '../lib/blogImages'
 
 type Props = {
   allPosts: Post[]
@@ -23,7 +24,7 @@ const Index = ({ allPosts }: Props) => {
           {heroPost && (
             <HeroPost
               title={heroPost.title}
-              coverImage={heroPost.coverImage}
+              coverImage={blogImages[heroPost.coverImage]}
               date={heroPost.date}
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}

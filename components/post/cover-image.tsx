@@ -1,15 +1,17 @@
 import cn from 'classnames'
 import Link from 'next/link'
+import Image from 'next/future/image'
+import { StaticImageData } from 'next/future/image'
 
 type Props = {
   title: string
-  src: string
+  src: StaticImageData
   slug?: string
 }
 
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
-    <img
+    <Image
       src={src}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-sm', {

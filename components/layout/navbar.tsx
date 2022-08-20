@@ -1,8 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Image from 'next/future/image'
 import DarkModeButton from '../buttons/dark-mode-button'
 import NavbarItem from '../layout/navbar-item'
+import logo from '../../public/assets/blog/logo/logo.png'
 
 const Navbar = () => {
   const router = useRouter()
@@ -17,11 +18,7 @@ const Navbar = () => {
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <Link href="/">
           <a className="flex items-center">
-            <img
-              src="/assets/blog/logo/logo.png"
-              className="mr-3 h-6 sm:h-10"
-              alt="Max Dev Logo"
-            />
+            <Image src={logo} className="mr-3 h-9 w-9" alt="Max Dev Logo" />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               Full Stack Dev Blog
             </span>

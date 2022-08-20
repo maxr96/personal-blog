@@ -9,6 +9,7 @@ import PostTitle from '../../components/post/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
+import blogImages from '../../lib/blogImages'
 
 type Props = {
   post: PostType
@@ -35,7 +36,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
               </Head>
               <PostHeader
                 title={post.title}
-                coverImage={post.coverImage}
+                coverImage={blogImages[post.coverImage]}
                 date={post.date}
                 tags={post.tags}
               />

@@ -1,17 +1,32 @@
 ---
-title: 'Not Dynamic!'
+title: 'What to consider when starting a personal project?'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+coverImage: 'dynamicRouting'
 date: '2020-03-16T05:35:07.322Z'
 tags: 'React, Next.js'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+There are a couple of things that you want to consider when starting a personal project. 
+I collected 5 things from my personal experience so I hope you can learn from my mistakes.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+## Choose a project idea that you are passionate about
+No matter what you like more cats or dogs, reading books or watching movies you should choose your project based on your personal preferences. 
 
-## Lorem Ipsum
+## Don't follow blindly tutorial from the Internet
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+## Set small reachable goals
+
+Setting small goals is the best way to let you enjoy the process constantly. When you set goals for yourself and can reach them in a couple of hours,
+you have a very rewarding experience. For example, you want to build a blog. You start by doing your research and deciding what set of tools you will use and
+that is your very first goal accomplished. Next you look into how other people design their web site and you sketch a draft either on paper or tool like Figma and this is already your second deliverable. When you work on the page each separate page and functionality like a like button is a separate deliverable. In this way you always have these small things that you can add and improve your web site. Ideally, you should set up yourself a light tracking tool like Trello Board or even a simple notebook. Just adding yourself a task and moving it to done feels very satisfiyng (trust me on that!). And if you want to get to the project later you can rewind the decisions you did and why it works like that. You will definetely forget all the details in your project in just a few weeks.
+
+
+## Decide what would be a Minimal Viable Product for you
+
+Put the most necessary things and deliver your project as an MVP. MVP will make you stay focused and deliver something that is usable and that you can showcase. Once you are done with that you can do what you like, but now you have some kind of a baseline at least.
+
+## Once you decide on tools and technologies you use resist the tension to switch to the next shining new tool
+
+This is especially true, if you are JS developer as you can see a new framework being born every day. But before you jump on the hype train, ask yourself the following questions: Why did you start doing your project with the current tools? Where you trying to get some experience in them before you can apply for work? If the answer is yes, than will this new shiny tool help you to achieve that? The answer here is usually no.

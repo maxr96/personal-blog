@@ -8,11 +8,7 @@ const MyProjects = () => {
         <div className="max-w-2xl mx-auto">
           <div className="shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
             <a href="#">
-              <img
-                className="rounded-t-lg"
-                src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                alt=""
-              />
+              <img className="rounded-t-lg" alt="" />
             </a>
             <div className="p-5">
               <a href="#">

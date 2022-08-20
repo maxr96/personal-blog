@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/future/image'
 import DateFormatter from '../date-formatter'
 import CoverImage from './cover-image'
 import PostTag from './post-tag'
@@ -5,7 +6,7 @@ import PostTitle from './post-title'
 
 type Props = {
   title: string
-  coverImage: string
+  coverImage: StaticImageData
   date: string
   tags: string
 }
