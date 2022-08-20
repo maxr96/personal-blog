@@ -12,8 +12,8 @@ const Layout = ({ preview, children }: Props) => {
     <>
       <Meta />
       <Navbar />
-      <div className="min-h-screen">
-        <main className="my-10">{children}</main>
+      <div className="min-h-screen dark:bg-gray-800 dark:text-neutral-300">
+        <main className="py-10">{children}</main>
       </div>
       <Footer />
     </>

@@ -5,7 +5,7 @@ const ContactMe = () => {
   return (
     <Layout>
       <Container>
-        <div className="flex min-h-screen items-center justify-start bg-white">
+        <div className="flex min-h-screen items-center justify-start">
           <div className="mx-auto w-full max-w-lg">
             <h1 className="text-4xl font-medium">Contact me</h1>
             <p className="mt-3">

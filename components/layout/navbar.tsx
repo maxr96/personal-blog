@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import DarkModeButton from '../dark-mode-button'
 import NavbarItem from '../layout/navbar-item'
 
 const Navbar = () => {
@@ -69,7 +70,7 @@ const Navbar = () => {
                 title={title}
               />
             ))}
-            {/* TODO: Dark mode switch button here */}
+            <DarkModeButton />
           </ul>
         </div>
       </div>
