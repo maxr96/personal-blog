@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import DarkModeButton from '../dark-mode-button'
+import DarkModeButton from '../buttons/dark-mode-button'
 import NavbarItem from '../layout/navbar-item'
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     { href: '/contact-me', title: 'Contact Me' }
   ]
   return (
-    <nav className="sticky top-0 bg-white border-gray-200 px-2 sm:px-4 py-5 dark:bg-gray-800">
+    <nav className="sticky top-0 px-2 sm:px-4 py-5 text-gray-700 bg-white border-gray-200 dark:bg-gray-800 dark:text-gray-400">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <Link href="/">
           <a className="flex items-center">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-          <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <ul className="flex flex-col justify-between items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium lg:text-lg">
             {pages.map(({ href, title }) => (
               <NavbarItem
                 key={href}
