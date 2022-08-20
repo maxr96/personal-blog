@@ -1,7 +1,7 @@
 import Container from '../components/layout/container'
 import Layout from '../components/layout/layout'
 import Image from 'next/future/image'
-import profilePic from '../public/assets/blog/about-me/me.png'
+import profilePic from '../public/assets/blog/about-me/me.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faAngular,
@@ -25,7 +25,7 @@ const AboutMe = () => {
           <Image
             src={profilePic}
             alt="My picture"
-            className="w-40 h-40 rounded-full shadow-xl shadow-blue-300 hover:scale-110"
+            className="w-40 h-40 rounded-full shadow-xl shadow-blue-500 hover:scale-110"
           />
           <p>
             I&apos;m a fullstack developer that enjoys building complex web
@@ -39,7 +39,7 @@ const AboutMe = () => {
           <p className="font-bold">I am experienced 🤓 in:</p>
           <ul className="list-disc list-inside space-y-10">
             <li>
-              <span className="text-blue-700 font-bold">
+              <span className="text-blue-700 font-bold dark:text-blue-300">
                 Back-end development{' '}
               </span>
               - Building back-end using both{' '}
@@ -56,7 +56,7 @@ const AboutMe = () => {
               and managed Matomo for web analytics.
             </li>
             <li>
-              <span className="text-blue-700 font-bold">
+              <span className="text-blue-700 font-bold dark:text-blue-300">
                 Front-end development{' '}
               </span>
               - Building{' '}
@@ -86,8 +86,10 @@ const AboutMe = () => {
               Material UI, Ngx-Charts/Graphs and Tailwind CSS.
             </li>
             <li>
-              <span className="text-blue-700 font-bold">Dev Ops </span>- Manage
-              a microservice that is hosted on{' '}
+              <span className="text-blue-700 font-bold dark:text-blue-300">
+                Dev Ops{' '}
+              </span>
+              - Manage a microservice that is hosted on{' '}
               <span className="text-yellow-700 font-semibold">
                 {' '}
                 <FontAwesomeIcon icon={faAws} /> AWS

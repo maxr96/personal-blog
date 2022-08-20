@@ -11,11 +11,11 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
       <Meta />
-      <Navbar />
-      <div className="min-h-screen dark:bg-gray-800 dark:text-neutral-300">
-        <main className="py-10">{children}</main>
+      <div className="flex flex-col dark:bg-gray-800 dark:text-neutral-300 min-h-screen">
+        <Navbar />
+        <main className="py-10 mb-auto">{children}</main>
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }
