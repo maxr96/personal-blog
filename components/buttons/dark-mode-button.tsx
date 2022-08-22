@@ -1,23 +1,27 @@
+import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
 const DarkModeButton = () => {
-  const [theme, setTheme] = useState('light')
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
-    setTheme(
-      localStorage.getItem('SITE_THEME') ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light')
-    )
+    setMounted(true)
   }, [])
 
-  useEffect(() => {
-    theme === 'dark'
-      ? document.documentElement.classList.add('dark')
-      : document.documentElement.classList.remove('dark')
-    localStorage.setItem('SITE_THEME', theme)
-  }, [theme])
+  // useEffect only runs on the client to avoid undefined theme value we need to wait for componenet to be mounted.
+  // Until then show placeholder
+  if (!mounted) {
+    return (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      ></svg>
+    )
+  }
 
   return (
     <button
