@@ -31,8 +31,13 @@ const AboutMe = () => {
             I&apos;m a fullstack developer that enjoys building complex web
             applications from the ground up. I have three years of experience in
             a startup that pushed the usage of new technologies and taught me to
-            adapt to the ever-changing requirements. For more than a year, I am
-            working on an authorisation service that serves millions of requests
+            adapt to the ever-changing requirements.
+          </p>
+          <p>
+            In my previous job, I was supporting a business critical middleware
+            that provides communication between all the systems in the bank. For
+            more than a year, I am working on an authorisation service that we
+            extracted from the monolith and now it serves millions of requests
             every day and helps HR Managers to manage their employees and give
             them access to the data they need.
           </p>
