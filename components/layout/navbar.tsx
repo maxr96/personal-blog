@@ -10,8 +10,7 @@ const Navbar = () => {
   const pages = [
     { href: '/', title: 'Posts' },
     { href: '/about-me', title: 'About Me' },
-    { href: '/my-projects', title: 'My Projects' },
-    { href: '/contact-me', title: 'Contact Me' }
+    { href: '/my-projects', title: 'My Projects' }
   ]
   return (
     <nav className="sticky top-0 px-2 sm:px-4 py-5 text-gray-700 bg-white border-gray-200 dark:bg-gray-800 dark:text-gray-400">
