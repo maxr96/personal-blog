@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'dyna': ['DynaPuff', 'cursive']
+        'handlee': ['Handlee', 'cursive']
       }
     },
   },

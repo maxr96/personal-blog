@@ -1,9 +1,13 @@
 import Container from '../components/layout/container'
 import Layout from '../components/layout/layout'
+import Head from 'next/head'
 
 const MyProjects = () => {
   return (
     <Layout>
+      <Head>
+        <title>{'My Projects | MAX DEV'}</title>
+      </Head>
       <Container>
         <div className="max-w-2xl mx-auto">
           <div className="shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
@@ -13,7 +17,7 @@ const MyProjects = () => {
             <div className="p-5">
               <a href="#">
                 <h5 className="font-bold text-2xl tracking-tight mb-2">
-                  Noteworthy technology acquisitions 2021
+                  Best Recipes App Backend
                 </h5>
               </a>
               <p className="font-normal text-gray-700 mb-3 dark:text-gray-400">
