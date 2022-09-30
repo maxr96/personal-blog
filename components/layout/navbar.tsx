@@ -19,10 +19,10 @@ const Navbar = () => {
           <a className="flex items-center">
             <Image
               src={logo}
-              className="mr-3 h-6 w-6 md:h-9 md:w-9"
+              className="mr-1 h-5 w-5 md:h-9 md:w-9"
               alt="Max Dev Logo"
             />
-            <span className="self-center md:text-xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-xs sm:text-base md:text-xl font-semibold whitespace-nowrap dark:text-white">
               Full Stack Dev Blog
             </span>
           </a>
