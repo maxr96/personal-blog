@@ -8,7 +8,7 @@ import logo from '../../public/assets/blog/logo/logo.png'
 const Navbar = () => {
   const router = useRouter()
   const pages = [
-    { href: '/', title: 'Posts' },
+    { href: '/posts', title: 'Posts' },
     { href: '/about-me', title: 'About Me' },
     { href: '/my-projects', title: 'My Projects' }
   ]
