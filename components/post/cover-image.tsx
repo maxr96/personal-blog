@@ -5,7 +5,7 @@ import Image, { StaticImageData } from 'next/future/image'
 type Props = {
   title: string
   src: StaticImageData
-  slug: string
+  slug?: string
 }
 
 const CoverImage = ({ title, src, slug }: Props) => {
