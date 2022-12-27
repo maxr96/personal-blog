@@ -25,3 +25,15 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown img {
+  @apply block mx-auto w-1/2;
+}
+
+.markdown img + em {
+  @apply block py-2 mx-auto w-1/2 text-center not-italic font-semibold;
+}
+
+.markdown :not(pre) > code {
+  @apply py-1 px-1 bg-gray-600 text-slate-50;
+}
